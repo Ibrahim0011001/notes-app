@@ -9,7 +9,19 @@ class Addnotebotoomsheet extends StatelessWidget {
     return const Padding(
       padding: EdgeInsets.symmetric(horizontal: 11.0, vertical: 10),
       child: Column(
-        children: [CustomTextField()],
+        children: [
+          CustomTextField(
+            hint: 'title',
+            maxlines: 1,
+          ),
+          SizedBox(
+            height: 16,
+          ),
+          CustomTextField(
+            hint: 'Context',
+            maxlines: 5,
+          )
+        ],
       ),
     );
   }
