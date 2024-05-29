@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:notesapp/view/wigets/add_note_bottom_sheet.dart';
 import 'package:notesapp/view/wigets/notes_viewbody.dart';

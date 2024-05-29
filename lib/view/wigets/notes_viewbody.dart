@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:notesapp/view/wigets/customappbar.dart';
 import 'package:notesapp/view/wigets/note_item.dart';
 
@@ -20,7 +18,10 @@ class _NotesviewbodyState extends State<Notesviewbody> {
       child: Column(
         children: [
           const SizedBox(),
-          CustomAppbar(),
+          const CustomAppbar(
+            text: 'Notes',
+            icon: Icons.search,
+          ),
           Expanded(
             child: ListView.builder(itemBuilder: (context, index) {
               return const Padding(
