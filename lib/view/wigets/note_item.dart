@@ -13,7 +13,9 @@ class Newitem extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         Navigator.of(context).push(MaterialPageRoute(
-          builder: (context) => const AddNoteView(),
+          builder: (context) => AddNoteView(
+            note: note,
+          ),
         ));
       },
       child: Container(
@@ -26,7 +28,7 @@ class Newitem extends StatelessWidget {
             ListTile(
                 title: Text(
                   note.title,
-                  style: TextStyle(
+                  style: const TextStyle(
                       color: Colors.black,
                       fontWeight: FontWeight.bold,
                       fontSize: 29),

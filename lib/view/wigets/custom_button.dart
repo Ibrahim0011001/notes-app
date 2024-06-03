@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 import '../../contants.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({super.key, this.ontap});
+  const CustomButton({super.key, this.ontap, required this.isLoading});
   final void Function()? ontap;
+  final bool isLoading;
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
